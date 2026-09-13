@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { StudentContext } from "../StudentArrProvider";
 import '../index.css';
-import { useState } from "react";
+
 
 function List() {
   const data = useContext(StudentContext);
   
-  const [buttonaction,setbuttonaction] = useState(false)
+  
   function handlebutton(id,name){
       data.setfavstudentarr([...data.favstudentarr,{id:id,name:name}])
       setbuttonaction(true)
