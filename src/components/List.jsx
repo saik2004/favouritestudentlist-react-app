@@ -9,7 +9,7 @@ function List() {
   
   function handlebutton(id,name){
       data.setfavstudentarr([...data.favstudentarr,{id:id,name:name}])
-      setbuttonaction(true)
+     
   }
 
   return (
